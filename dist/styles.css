@@ -1,0 +1,24 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.gridContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+}
+
+.portrait {
+    border-radius: 50%;
+    box-shadow: 0px 5px 5px black;
+}
+
+.portrait:hover, #mapSelect:hover, #characterSelect:hover, #weaponSelect:hover {
+    opacity: 55%;
+    cursor: pointer;
+}
+
+h3.headingsTitle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
