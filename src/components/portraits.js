@@ -12,12 +12,14 @@ const Portraits = () => {
     }, []);
 
     return (
-        <div className='gridContainer'>
+        <div>
             {portraitResults.map((element) =>
-                <div>
+                <div className='characterContainer'>
                     <img src={element.displayIcon} className='portrait'></img>
+
                 </div>)}
         </div>
+
     )
 };
 
