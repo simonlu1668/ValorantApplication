@@ -7,14 +7,15 @@ import Portraits from './components/portraits.js';
 
 function App() {
     const [currentlySelected, setCurrentlySelected] = useState('mapSelect');
+
     return (
         <div>
-            <Title 
-            currentlySelected = {currentlySelected}
-            setCurrentlySelected = {setCurrentlySelected}/>
-            {currentlySelected === 'characterSelect' ? <Portraits/> : null }
-            {currentlySelected === 'mapSelect' ? <Maps/> : null}
-            {currentlySelected === 'weaponSelect' ? <Weapons/> : null}
+            <Title
+                currentlySelected={currentlySelected}
+                setCurrentlySelected={setCurrentlySelected} />
+            {currentlySelected === 'characterSelect' ? <Portraits /> : null}
+            {currentlySelected === 'mapSelect' ? <Maps /> : null}
+            {currentlySelected === 'weaponSelect' ? <Weapons /> : null}
         </div>
     );
 };

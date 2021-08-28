@@ -37,7 +37,7 @@ const Maps = () => {
                             {index === current && (
                                 <div>
                                     <img src={element.splash} className='map' alt={element.displayName} />
-                                    <div class='map_overlay'>
+                                    <div className='overlay'>
                                         {currentMapName}
                                     </div>
                                 </div>
@@ -46,6 +46,7 @@ const Maps = () => {
                     )
                 })}
             </section>
+         
 
         </div>
 

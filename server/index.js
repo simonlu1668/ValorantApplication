@@ -5,7 +5,7 @@ const app = express();
 
 app.use(express.static('dist'));
 
-app.get('/characterPortaits', (req, res) => {
+app.get('/characters', (req, res) => {
     axios.get('https://valorant-api.com/v1/agents')
     .then((response) => {
         res.send(response.data);
