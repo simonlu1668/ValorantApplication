@@ -15,7 +15,7 @@ const Title = ({ currentlySelected, setCurrentlySelected }) => {
             <h3>
                 <div className='selectedFalse' id='homeSelect' onClick={()=>clickedOn('homeSelect')}>Home </div>
                 <div className='selectedFalse' id='mapSelect' onClick={()=> clickedOn('mapSelect')}>Maps</div>
-                <div className='selectedFalse' id='characterSelect' onClick={()=>clickedOn('characterSelect')}>Characters</div>
+                <div className='selectedFalse' id='characterSelect' onClick={()=>clickedOn('characterSelect')}>Agents</div>
                 <div className='selectedFalse' id='weaponSelect' onClick={()=>clickedOn('weaponSelect')} >Weapons</div>
             </h3>
         </div>
