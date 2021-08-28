@@ -139,3 +139,8 @@ svg#leftArrowPortraits {
     transform: translateX(-50%) translateY(-50%);
     font-size: 5em;
 }
+
+span.valorantTitle {
+    color: #AA4A44;
+    font-weight: bold;
+}
