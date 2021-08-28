@@ -4,7 +4,7 @@ body {
     overflow: hidden;
 }
 
- #mapSelect:hover, #characterSelect:hover, #weaponSelect:hover, .rightArrow:hover, .leftArrow:hover, .weapon:hover {
+ #mapSelect:hover, #characterSelect:hover, #weaponSelect:hover, .rightArrow:hover, .leftArrow:hover, .weapon:hover, #homeSelect:hover{
     opacity: 55%;
     cursor: pointer;
 }
@@ -129,4 +129,13 @@ svg#rightArrowPortraits, svg#leftArrowPortraits {
 
 svg#leftArrowPortraits {
     left: 80vw;
+}
+
+.homeText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: left;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 5em;
 }

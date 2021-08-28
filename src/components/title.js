@@ -3,19 +3,20 @@ import React, { useEffect } from 'react';
 const Title = ({ currentlySelected, setCurrentlySelected }) => {
 
 
-    const clickedOn = (event) => {
-        setCurrentlySelected(event.target.id);
+    const clickedOn = (clickedOnValue) => {
+        setCurrentlySelected(clickedOnValue);
     }
 
     return (
         <div className='header'>
-            <h1 className='headerTitle'>
+            <h1 className='headerTitle' onClick={()=>clickedOn('mapSelect')}>
                 ValBuddy
             </h1>
             <h3>
-                <div className='selectedFalse' id='mapSelect' onClick={clickedOn}>Maps</div>
-                <div className='selectedFalse' id='characterSelect' onClick={clickedOn}>Characters</div>
-                <div className='selectedFalse' id='weaponSelect' onClick={clickedOn} >Weapons</div>
+                <div className='selectedFalse' id='homeSelect' onClick={()=>clickedOn('homeSelect')}>Home </div>
+                <div className='selectedFalse' id='mapSelect' onClick={()=> clickedOn('mapSelect')}>Maps</div>
+                <div className='selectedFalse' id='characterSelect' onClick={()=>clickedOn('characterSelect')}>Characters</div>
+                <div className='selectedFalse' id='weaponSelect' onClick={()=>clickedOn('weaponSelect')} >Weapons</div>
             </h3>
         </div>
     )
