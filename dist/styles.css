@@ -4,7 +4,7 @@ body {
     overflow: hidden;
 }
 
- #mapSelect:hover, #characterSelect:hover, #weaponSelect:hover, .rightArrow:hover, .leftArrow:hover, .weapon:hover, #homeSelect:hover{
+ #mapSelect:hover, #characterSelect:hover, #weaponSelect:hover, .headerTitle:hover, .rightArrow:hover, .leftArrow:hover, .weapon:hover, #homeSelect:hover{
     opacity: 55%;
     cursor: pointer;
 }
@@ -140,7 +140,7 @@ svg#leftArrowPortraits {
     font-size: 5em;
 }
 
-span.valorantTitle {
-    color: #AA4A44;
+a.valorantTitle {
+    color: #ff4655;
     font-weight: bold;
 }

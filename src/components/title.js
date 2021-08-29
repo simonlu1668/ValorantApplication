@@ -9,7 +9,7 @@ const Title = ({ currentlySelected, setCurrentlySelected }) => {
 
     return (
         <div className='header'>
-            <h1 className='headerTitle' onClick={()=>clickedOn('mapSelect')}>
+            <h1 className='headerTitle' onClick={()=>clickedOn('homeSelect')}>
                 ValBuddy
             </h1>
             <h3>
